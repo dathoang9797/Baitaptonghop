@@ -42,7 +42,71 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-   <!-- Optional JavaScript -->
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header__menu">
+          <nav class="navbar navbar-expand-lg justify-content-between p-0">
+            <div class="header__menu__left">
+              <a class="navbar-brand header__logo" href="#">Diner</a>
+            </div>
+            <div class="header__menu__right">
+              <div class="search__bar mr-20">
+                <form class="position-relative d-none d-sm-block">
+                  <input
+                    class="form-control mr-sm-2 header__search__input mr-20"
+                    type="search"
+                    placeholder="Search here..."
+                    aria-label="Search"
+                  />
+                  <i class="fa fa-search header__search__icon"></i>
+                </form>
+              </div>
+              <div class="header__switch__theme mr-20">
+                <div class="header__switch__theme__container">
+                  <i class="fa fa-sun header__switch__theme_container__icon__sun d-none"></i>
+                  <i class="fa fa-moon header__switch__theme_container__icon__moon"></i>
+                </div>
+              </div>
+              <div class="header__burger">
+                <button class="header__burger__button" type="button">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="header__overlay header__overlay--scale">
+              <button type="button" class="header__overlay__button--close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+              <nav>
+                <ul>
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="error.html">404</a></li>
+                  <li><a href="landing-single.html">Landing Page</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="elements.html">Shot Codes</a></li>
+                  <li><a href="email.html">Email</a></li>
+                </ul>
+              </nav>
+            </div>
+          </nav>
+        </div>
+        <div class="header__banner">
+          <h3 class="mb-4">The only thing we love more than food is you!</h3>
+          <p class="pr-lg-5 mt-md-4 mt-3">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum facere.
+          </p>
+          <a class="btn header__banner__btn--white mt-sm-5 mt-4 mr-2 mb-sm-0 mb-md-0 mb-2" href="about.html">
+            Read More
+            <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     <script
