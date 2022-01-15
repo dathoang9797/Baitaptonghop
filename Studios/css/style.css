@@ -403,8 +403,7 @@ a.dropdown-item:hover {
 .testimonial__title__main span,
 .team__title__main span {
   color: var(--primary-color);
-  font-size: 30px;
-  background: var(--bg-color-li);
+  font-size: 40px;
   width: 70px;
   height: 70px;
   line-height: 70px;
