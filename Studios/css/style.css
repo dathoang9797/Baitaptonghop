@@ -935,7 +935,8 @@ a.dropdown-item:hover {
     margin-top: 16px;
     box-shadow: 0 6px 19px rgb(0 0 0 / 5%);
   }
-  .banner__box.banner__box--color-1,  .banner__box.banner__box--color-3{
+  .banner__box.banner__box--color-1,
+  .banner__box.banner__box--color-3 {
     padding: 40px 10px;
   }
 
@@ -968,5 +969,9 @@ a.dropdown-item:hover {
   }
   .footer__subscribe {
     padding: 40px;
+  }
+  .footer__subscribe__left h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
   }
 }
