@@ -288,8 +288,8 @@ a.dropdown-item:hover {
 }
 
 .slider__view--bg h5 {
-  font-size: 70px;
-  line-height: 80px;
+  font-size: clamp(2.375rem, 1.5179rem + 3.8095vw, 4.375rem);
+  line-height: clamp(3rem, 2.1429rem + 3.8095vw, 5rem);
   font-weight: bold;
   color: #fff;
 }
