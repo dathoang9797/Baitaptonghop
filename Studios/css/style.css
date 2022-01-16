@@ -403,18 +403,8 @@ a.dropdown-item:hover {
 .testimonial__title__main span,
 .team__title__main span {
   color: var(--primary-color);
-<<<<<<< HEAD
-<<<<<<< HEAD
-  font-size: 30px;
-  background: var(--bg-color-li);
-=======
-  font-size: 40px;
->>>>>>> 9df63a5 (Fix color)
-=======
   font-size: clamp(1.875rem, 1.6071rem + 1.1905vw, 2.5rem);
   line-height: clamp(2.5rem, 2.2321rem + 1.1905vw, 3.125rem);
-
->>>>>>> 1102143 (Fix responsive all)
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -944,6 +934,7 @@ a.dropdown-item:hover {
     margin-top: 16px;
     box-shadow: 0 6px 19px rgb(0 0 0 / 5%);
   }
+  
   .banner__box.banner__box--color-1,
   .banner__box.banner__box--color-3 {
     padding: 40px 10px;
