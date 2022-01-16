@@ -962,6 +962,9 @@ a.dropdown-item:hover {
     top: -78px;
     margin: 0 1em;
   }
+  .footer__columns {
+    margin-top: 180px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -969,7 +972,7 @@ a.dropdown-item:hover {
     flex-wrap: wrap;
   }
   .footer__columns {
-    margin-top: 240px;
+    margin-top: 230px;
   }
   .footer__subscribe__right form button {
     width: 100%;
