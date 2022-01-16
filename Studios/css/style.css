@@ -13,6 +13,10 @@
   margin-right: 2em;
 }
 
+.header__top__right li a:hover,
+.header__top__left li a:hover {
+  color: var(--secondary-color);
+}
 #header__menu .mode-container:hover {
   color: var(--secondary-color);
   cursor: pointer;
@@ -934,7 +938,7 @@ a.dropdown-item:hover {
     margin-top: 16px;
     box-shadow: 0 6px 19px rgb(0 0 0 / 5%);
   }
-  
+
   .banner__box.banner__box--color-1,
   .banner__box.banner__box--color-3 {
     padding: 40px 10px;

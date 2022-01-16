@@ -105,6 +105,7 @@ button:hover {
   transition: 0.5s all;
   -moz-transition: 0.5s all;
 }
+
 .btn-style {
   padding: 14px 30px;
   font-weight: 600;
