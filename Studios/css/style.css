@@ -334,7 +334,7 @@ a.dropdown-item:hover {
   display: block;
   color: #fff;
   font-weight: 600;
-  font-size: 24px;
+  font-size: clamp(1.1875rem, 1.0268rem + 0.7143vw, 1.5625rem);
 }
 
 .banner__box__title__head:hover {
@@ -355,8 +355,8 @@ a.dropdown-item:hover {
 .stat__title__main,
 .testimonial__title__main,
 .team__title__main {
-  font-size: 40px;
-  line-height: 50px;
+  font-size: clamp(1.875rem, 1.6071rem + 1.1905vw, 2.5rem);
+  line-height: clamp(2.5rem, 2.2321rem + 1.1905vw, 3.125rem);
   font-weight: 600;
   position: relative;
 }
@@ -404,14 +404,19 @@ a.dropdown-item:hover {
 .team__title__main span {
   color: var(--primary-color);
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 30px;
   background: var(--bg-color-li);
 =======
   font-size: 40px;
 >>>>>>> 9df63a5 (Fix color)
+=======
+  font-size: clamp(1.875rem, 1.6071rem + 1.1905vw, 2.5rem);
+  line-height: clamp(2.5rem, 2.2321rem + 1.1905vw, 3.125rem);
+
+>>>>>>> 1102143 (Fix responsive all)
   width: 70px;
   height: 70px;
-  line-height: 70px;
   border-radius: 50%;
 }
 
@@ -421,6 +426,11 @@ a.dropdown-item:hover {
 .testimonial__title__main span,
 .team__title__main span {
   color: var(--secondary-color);
+}
+
+.feature__images span {
+  background: var(--bg-color-li);
+  line-height: 70px;
 }
 
 .feature__info__title {
@@ -442,6 +452,14 @@ a.dropdown-item:hover {
 /* COURSE */
 .courses {
   background: var(--bg-light);
+}
+.course__card {
+  transition: all 0.4s ease;
+}
+
+.course__card:hover {
+  transition: all 0.4s ease;
+  box-shadow: 0px 15px 30px rgb(29 23 77 / 8%);
 }
 
 .course__card__info img {
@@ -471,6 +489,10 @@ a.dropdown-item:hover {
 
 .course__card__meta__list a:nth-child(odd) {
   background-color: #ffa100;
+}
+
+.course__card__meta__list a:nth-child(3) {
+  background: #037ef3;
 }
 
 .course__card__price {
@@ -506,7 +528,8 @@ a.dropdown-item:hover {
 .course__card__content li {
   color: var(--heading-color);
 }
-.course__card__content li i {
+
+.course__card__content__item i {
   color: var(--secondary-color);
 }
 
@@ -657,6 +680,10 @@ a.dropdown-item:hover {
 
 .team__items:hover h5.member a {
   color: var(--secondary-color);
+}
+.team__bottom h5 a {
+  font-weight: 600;
+  color: var(--heading-color);
 }
 
 /* ABOUT */
@@ -851,7 +878,13 @@ a.dropdown-item:hover {
   transition: 0.3s ease;
 }
 
-@media only screen and (max-width: 991px) {
+@media (max-width: 1200px) {
+  .banner__box.banner__box--color-1 {
+    padding: 35.5px 35px;
+  }
+}
+
+@media (max-width: 991px) {
   #header__menu .navbar {
     padding: 0.5rem 1rem;
   }
@@ -859,6 +892,18 @@ a.dropdown-item:hover {
   .header__top {
     display: none;
   }
+
+  #header__menu.header__menu__fixed {
+    position: fixed;
+    background: var(--bg-color);
+    height: auto;
+  }
+
+  #header__menu .navbar-nav .dropdown-menu {
+    transform: translateX(0px);
+    border: 1px solid var(--border-color-light);
+  }
+
   .navbar-toggler-services__feature__icon.services__feature__icon-close {
     display: none;
   }
@@ -899,10 +944,38 @@ a.dropdown-item:hover {
     margin-top: 16px;
     box-shadow: 0 6px 19px rgb(0 0 0 / 5%);
   }
+  .banner__box.banner__box--color-1,  .banner__box.banner__box--color-3{
+    padding: 40px 10px;
+  }
 
-  #header__menu.header__menu__fixed {
-    position: fixed;
-    background: var(--bg-color);
-    height: auto;
+  .banner__box {
+    padding: 40px 30px;
+  }
+  .footer__subscribe {
+    margin: 0 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__subscribe {
+    top: -78px;
+    margin: 0 1em;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer__subscribe__right form {
+    flex-wrap: wrap;
+  }
+  .footer__columns {
+    margin-top: 240px;
+  }
+  .footer__subscribe__right form button {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 1em;
+  }
+  .footer__subscribe {
+    padding: 40px;
   }
 }
